@@ -5,11 +5,11 @@ var _ = require("underscore");
 
 var LensConverter = require('./lens_converter');
 
-var ElifeConverter = function(options) {
+var WhiteLabelConverter = function(options) {
   LensConverter.call(this, options);
 };
 
-ElifeConverter.Prototype = function() {
+WhiteLabelConverter.Prototype = function() {
 
   var __super__ = LensConverter.prototype;
 
@@ -390,8 +390,8 @@ ElifeConverter.Prototype = function() {
 
 };
 
-ElifeConverter.Prototype.prototype = LensConverter.prototype;
-ElifeConverter.prototype = new ElifeConverter.Prototype();
-ElifeConverter.prototype.constructor = ElifeConverter;
+WhiteLabelConverter.Prototype.prototype = LensConverter.prototype;
+WhiteLabelConverter.prototype = new WhiteLabelConverter.Prototype();
+WhiteLabelConverter.prototype.constructor = WhiteLabelConverter;
 
-module.exports = ElifeConverter;
+module.exports = WhiteLabelConverter;
