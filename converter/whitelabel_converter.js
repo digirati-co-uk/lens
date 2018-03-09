@@ -111,7 +111,7 @@ ElifeConverter.Prototype = function() {
       }
 
       return [
-        "https://test-digirati-published/articles/",
+        "https://s3.amazonaws.com/jen-digirati-published/articles/",
         state.doc.id,
         "/",
         url
@@ -125,7 +125,7 @@ ElifeConverter.Prototype = function() {
       return [baseURL, node.url].join('');
     } else {
       node.url = [
-        "https://test-digirati-published/articles/",
+        "https://s3.amazonaws.com/jen-digirati-published/articles/",
         state.doc.id,
         "/",
         node.url
@@ -193,7 +193,7 @@ ElifeConverter.Prototype = function() {
 
     if (pdfURI) {
       var pdfLink = [
-        "https://test-digirati-published/articles/",
+        "https://s3.amazonaws.com/jen-digirati-published/articles/",
         state.doc.id,
         "/",
         pdfURI ? pdfURI.getAttribute("xlink:href") : "#"
@@ -221,7 +221,7 @@ ElifeConverter.Prototype = function() {
     }
 
     links.push({
-      url: "https://test-digirati-published/articles/"+state.doc.id+"/elife-"+state.doc.id+"-v"+version+".xml",
+      url: "https://s3.amazonaws.com/jen-digirati-published/articles/"+state.doc.id+"/elife-"+state.doc.id+"-v"+version+".xml",
       name: "Source XML",
       type: "xml"
     });
@@ -252,7 +252,7 @@ ElifeConverter.Prototype = function() {
       return [baseURL, node.url].join('');
     } else {
       node.url = [
-        "https://test-digirati-published/articles/",
+        "https://s3.amazonaws.com/jen-digirati-published/articles/",
         state.doc.id,
         "/",
         node.url
@@ -339,7 +339,7 @@ ElifeConverter.Prototype = function() {
       }
 
       return [
-        "https://test-digirati-published/articles/",
+        "https://s3.amazonaws.com/jen-digirati-published/articles/",
         state.doc.id,
         "/",
         url
